@@ -3,6 +3,7 @@ androidx-lifecycle = "2.9.5"
 composeMultiplatform = "1.9.1"
 junit = "4.13.2"
 kotlin = "2.2.20"
+composeHotReload = "1.0.0-rc03"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -13,6 +14,7 @@ androidx-lifecycle-runtimeCompose = { module = "org.jetbrains.androidx.lifecycle
 material-icon = { module = "org.jetbrains.compose.material:material-icons-core", version = "1.7.3"}
 
 [plugins]
+composeHotReload = { id = "org.jetbrains.compose.hot-reload", version.ref = "composeHotReload"}
 composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
