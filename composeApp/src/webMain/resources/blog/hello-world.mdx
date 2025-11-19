@@ -1,0 +1,26 @@
+---
+title: "Kotlin × React Markdown"
+date: "2024-05-01"
+excerpt: "React Markdown と Syntax Highlighter を使って MDX を描画する"
+---
+
+## はじめに
+
+Compose Multiplatform のプロトタイプでも、ブログ記事自体は Markdown (MDX) をソースにしておくと移植性が高まります。
+ここでは `react-markdown` と `react-syntax-highlighter` を組み合わせ、クライアント側で記事を描画しています。
+
+## コードブロック
+
+Markdown 内のコードフェンスには言語名を付与しておくことで、SyntaxHighlighter が自動的にハイライトします。
+
+```kotlin
+fun greet(name: String): String {
+    return "Hello, $name!"
+}
+```
+
+インラインコードも `inline-code` クラスを通して読みやすいトーンで表示されます。
+
+## まとめ
+
+MDX をそのままレポジトリ内で管理し、必要に応じて追加・更新するだけでブログを拡張できます。
